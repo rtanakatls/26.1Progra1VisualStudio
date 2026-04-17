@@ -6,17 +6,18 @@ using System.Threading.Tasks;
 
 namespace Progra1261
 {
-    internal abstract class Entity
+    internal abstract class Figure
     {
-        protected string name;
-        public string Name
-        {
-            get { return name; }
-        }
 
-        public Entity(string name) 
-        { 
+        protected string name;
+
+        public string Name { get { return name; } }
+
+        public Figure(string name)
+        {
             this.name = name;
         }
+
+        public abstract float GetArea();
     }
 }

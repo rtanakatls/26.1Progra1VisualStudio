@@ -10,8 +10,8 @@ namespace Progra1261
     {
         static void Main(string[] args)
         {
-            Menu menu = new Menu();
-            menu.Execute();
+            bool a = true;
+            Console.WriteLine(!a && a || !a);
         }
     }
 }

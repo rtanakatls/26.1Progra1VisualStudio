@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Progra1261
 {
-    internal class Character : Entity
+    internal class Character : Entity, IAttack
     {
         protected int health;
         protected int age;
+        protected int damage;
 
         public int Health
         {
@@ -25,6 +26,11 @@ namespace Progra1261
         {
             this.health = health;
             this.age = age;
+        }
+
+        public int GetDamage()
+        {
+            return damage;
         }
 
     }
